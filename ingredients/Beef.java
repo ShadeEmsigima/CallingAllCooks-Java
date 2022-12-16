@@ -1,8 +1,8 @@
 package ingredients;
 import enumerators.*;
-import tools.ICuttable;
+import tools.ISliceable;
 
-public class Beef implements ICuttable{
+public class Beef implements ISliceable{
     String name = "beef";
     public String description = "a succulent bit of moo moo meat.";
     public EType type = EType.MEAT;
@@ -13,8 +13,8 @@ public class Beef implements ICuttable{
     }
 
     @Override //from interface ICuttable
-    public void Cut() {
-        System.out.println("Beef - Cutting a " + form.toString().toLowerCase() + " of beef...");
+    public void Slice() {
+        System.out.println("Beef - Slicing a " + form.toString().toLowerCase() + " of beef...");
         this.form = EForm.SLICED;
         System.out.println("Beef - ...beef is now " + this.form.toString().toLowerCase() + "!");
     }
