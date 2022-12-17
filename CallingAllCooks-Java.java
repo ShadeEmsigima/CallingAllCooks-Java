@@ -4,15 +4,12 @@ import tools.*;
 class RunCAC{
 
     public static void main(String[] args) {
-        {
-            Start();
-            Knife knife = new Knife(); // should I make this a singleton?
-        }
-
+        
+        Start();
+        Knife knife = new Knife();
         Beef beef = new Beef();
         
-        Knife.Slice(beef);
-        //beef.Slice();
+        knife.Slice(beef);
         
         Stop();
     }

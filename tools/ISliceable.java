@@ -2,5 +2,5 @@ package tools;
 
 
 public interface ISliceable {
-    void Slice();
+    public void Slice();
 }
