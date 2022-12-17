@@ -2,8 +2,9 @@ package tools;
 
 
 public class Knife { // insert methods with actions you can do with a knife on ingredients
-    void Slice(ISliceable slicable){
-
+    public void Slice(ISliceable slicable){
+        System.out.println("Knife - Preparing the knife to slice");
+        slicable.Slice();
     }
     
     /*
