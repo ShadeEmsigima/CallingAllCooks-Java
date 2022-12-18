@@ -1,0 +1,5 @@
+# Jetbrain's IntelliJ stuff
+.idea/
+
+# Visual Studio stuff
+.vs/

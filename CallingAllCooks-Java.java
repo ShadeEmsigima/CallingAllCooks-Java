@@ -11,7 +11,7 @@ class RunCAC{
 
         Beef beef = new Beef();
         
-        Knife.Slice(beef);
+        //Knife.Slice(beef);
         //beef.Slice();
         
         Stop();
@@ -19,7 +19,6 @@ class RunCAC{
 
     static void Start(){
 
-        
         System.out.println("======================= \n");
         
         System.out.println("Welcome to Calling all Cooks!" + "\n");
