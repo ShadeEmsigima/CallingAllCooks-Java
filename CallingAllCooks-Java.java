@@ -22,7 +22,6 @@ class RunCAC{
         System.out.println("Welcome to Calling all Cooks!" + "\n");
     }
     static void Stop(){
-        // functionality when closing the program. Remember to close things like scanners here too
         System.out.println("\n" + "=======================");
     }
 
