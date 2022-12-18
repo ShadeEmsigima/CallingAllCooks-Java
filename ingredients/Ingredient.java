@@ -4,8 +4,8 @@ package ingredients;
 import enumerators.*;
 
 public abstract class Ingredient {
-    public String name;
-    public String description;
-    public EType type;
-    public EForm form;
+    String name;
+    public String description = "This ingredient can be used as a component in a dish.";
+    EType type;
+    EForm form;
 }
