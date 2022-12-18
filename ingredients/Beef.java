@@ -9,13 +9,13 @@ public class Beef implements ISliceable{
     public EForm form = EForm.CHUNK;
 
     public Beef(){
-        System.out.println("Using beef");
+        System.out.println("Beef - Using beef");
     }
 
     @Override //from interface ICuttable
     public void Slice() {
-        System.out.println("Beef - Slicing a " + form.toString().toLowerCase() + " of beef...");
+        System.out.println("Beef - Slicing a: " + form.toString().toLowerCase() + " of beef...");
         this.form = EForm.SLICED;
-        System.out.println("Beef - ...beef is now " + this.form.toString().toLowerCase() + "!");
+        System.out.println("Beef - ...beef is now: " + this.form.toString().toLowerCase() + "!");
     }
 }
