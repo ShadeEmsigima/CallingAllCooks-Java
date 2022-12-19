@@ -1,4 +1,6 @@
 import ingredients.*;
+import processors.Stove;
+import processors.processorModules.Pan;
 import tools.*;
 
 class RunCAC{
@@ -8,9 +10,17 @@ class RunCAC{
         Start();
         Knife knife = new Knife();
         Beef beef = new Beef();
+        Stove stove = new Stove();
+        Pan pan = new Pan();
         
+        System.out.println("-------------------");
+
         knife.Slice(beef);
+        stove.Setmodule(pan);
         
+        stove.Setmodule(pan);
+        
+
         Stop();
     }
 
