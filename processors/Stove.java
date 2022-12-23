@@ -10,6 +10,11 @@ public class Stove extends Processor {
 
     private ProcessorModule module;
 
+
+    public Stove(){
+        System.out.println("Stove - stove ready");
+    }
+
     public void Setmodule(ProcessorModule m){
         
         // check if the stove is vacant

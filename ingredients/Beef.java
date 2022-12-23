@@ -9,7 +9,7 @@ public class Beef implements ISliceable{
     public EForm form = EForm.CHUNK;
 
     public Beef(){
-        System.out.println("Beef - Using beef");
+        System.out.println("Beef - beef ready");
     }
 
     @Override //from interface ICuttable
