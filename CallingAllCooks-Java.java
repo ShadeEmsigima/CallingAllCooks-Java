@@ -28,7 +28,7 @@ class RunCAC{
 
         System.out.println("======================= \n");
         
-        System.out.println("Welcome to Calling all Cooks!" + "\n");
+        System.out.println("Welcome to Calling all Cooks!" + "\n \n" + "---Preparing kitchen...---");
     }
     static void Stop(){
         System.out.println("\n" + "=======================");
