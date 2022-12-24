@@ -1,4 +1,7 @@
+import java.time.LocalTime;
 import java.util.Scanner;
+
+import javax.management.StringValueExp;
 
 import ingredients.*;
 import processors.Stove;
@@ -26,8 +29,13 @@ class RunCAC{
         stove.Setmodule(pan);
 
 
-        
+        LocalTime y = LocalTime.now();
+        reply = sc.nextLine();
+        System.out.println("You typed: " + reply);
+        beef.Cook(y.toString());
 
+        
+        sc.close();
         Stop();
     }
 

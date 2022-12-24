@@ -4,5 +4,5 @@ package processors;
 public interface ICookable {
     public float doneNess = 0.0f;
     
-    public void Cook();
+    public void Cook(String x);
 }
