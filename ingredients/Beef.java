@@ -1,4 +1,8 @@
 package ingredients;
+import java.sql.Time;
+import java.time.LocalTime;
+import java.util.Timer;
+
 import enumerators.*;
 import processors.ICookable;
 import tools.ISliceable;
@@ -24,7 +28,11 @@ public class Beef implements ISliceable, ICookable{
     }
 
     @Override
-    public void Cook() { //from interface ICookable
+    public void Cook(String x) { //from interface ICookable
+        int a = LocalTime.parse(x).toSecondOfDay();
+        int b = LocalTime.now().toSecondOfDay();
+        System.out.println("Difference is: " + (b-a) + " seconds");
+        
         doneNess += 1 ;
         
     }
