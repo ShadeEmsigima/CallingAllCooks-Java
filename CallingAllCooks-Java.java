@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 import ingredients.*;
 import processors.Stove;
 import processors.processorModules.Pan;
@@ -8,6 +10,9 @@ class RunCAC{
     public static void main(String[] args) {
         
         Start();
+        Scanner sc = new Scanner(System.in);
+        String reply;
+
         Knife knife = new Knife();
         Beef beef = new Beef();
         Stove stove = new Stove();
@@ -19,6 +24,8 @@ class RunCAC{
         stove.Setmodule(pan);
         
         stove.Setmodule(pan);
+
+
         
 
         Stop();
