@@ -31,9 +31,11 @@ public class Beef implements ISliceable, ICookable{
     public void Cook(String x) { //from interface ICookable
         int a = LocalTime.parse(x).toSecondOfDay();
         int b = LocalTime.now().toSecondOfDay();
-        System.out.println("Difference is: " + (b-a) + " seconds");
+        int diff = b-a;
+        System.out.println("Beef - Cooking time: " + (b-a) + " seconds");
         
-        doneNess += 1 ;
-        
+        doneNess += diff ;
+        System.out.println("Beef - ...cooking has stopped");
+        System.out.println(getClass().getSimpleName() + " doneness is now: " + this.doneNess);
     }
 }
