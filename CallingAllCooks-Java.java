@@ -29,9 +29,11 @@ class RunCAC{
         stove.Setmodule(pan);
 
 
-        LocalTime y = LocalTime.now();
+        System.out.println("Type anything to start cooking");
         reply = sc.nextLine();
-        System.out.println("You typed: " + reply);
+        LocalTime y = LocalTime.now();
+        System.out.println("Cooking has started, type anything to stop");
+        reply = sc.nextLine();
         beef.Cook(y.toString());
 
         
