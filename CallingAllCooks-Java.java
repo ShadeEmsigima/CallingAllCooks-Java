@@ -18,9 +18,7 @@ class RunCAC{
         
         String reply = gm.reply;
 
-
-        Knife knife = ((StandardGM) gm).gmknife;
-        System.out.println("using " + knife.getClass().getSimpleName());
+        Knife knife = new Knife();
         Beef beef = new Beef();
         Stove stove = new Stove();
         Pan pan = new Pan();
@@ -33,12 +31,13 @@ class RunCAC{
         stove.Setmodule(pan);
 
 
-        System.out.println("Type anything to start cooking");
-        reply = gm.sc.nextLine();
-        LocalTime y = LocalTime.now();
-        System.out.println("Cooking has started, type anything to stop");
-        reply = gm.sc.nextLine();
-        beef.Cook(y.toString());
+        // System.out.println("Type anything to start cooking");
+        // reply = gm.sc.nextLine();
+        // LocalTime y = LocalTime.now();
+        // System.out.println("Cooking has started, type anything to stop");
+        // reply = gm.sc.nextLine();
+        stove.SetHeat("medium");
+
 
         
        

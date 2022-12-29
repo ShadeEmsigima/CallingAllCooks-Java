@@ -2,8 +2,6 @@
 package gameManagers;
 import java.util.Scanner;
 
-import tools.Knife;
-
 public abstract class GameManager {
     public final static Scanner sc = new Scanner(System.in);
     public static String reply;
